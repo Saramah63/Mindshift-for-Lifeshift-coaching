@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Persian font support */
+  [dir="rtl"] {
+    font-family: 'Vazirmatn', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  h1 {
+    @apply scroll-m-20 text-4xl tracking-tight lg:text-5xl;
+  }
+
+  h2 {
+    @apply scroll-m-20 text-3xl tracking-tight;
+  }
+
+  h3 {
+    @apply scroll-m-20 text-2xl tracking-tight;
+  }
+
+  h4 {
+    @apply scroll-m-20 text-xl tracking-tight;
+  }
+
+  p {
+    @apply leading-7;
+  }
+}
+
+@layer components {
+  .rtl {
+    direction: rtl;
+  }
+}
+
+/* Import Vazirmatn font for Persian text */
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
