@@ -1,0 +1,35 @@
+# Robots.txt for Sara Mahmodi - Mindshift for Lifeshift
+# Professional Life Coaching Services
+# https://www.saramahmodi.com
+
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://www.saramahmodi.com/sitemap.xml
+
+# Crawl-delay (optional - helps prevent server overload)
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block bad bots (optional)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
