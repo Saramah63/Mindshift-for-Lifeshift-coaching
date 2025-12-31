@@ -58,3 +58,7 @@
           "build": "vite build"
       }
   }
+git status
+git add.
+git commit -m "Add project files (package.json)."
+git push
